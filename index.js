@@ -48,7 +48,7 @@ case 6: hari = 'Sabtu'; break;
 }
 
 switch(bulan1) { 
-case 0: bulan1 = 'kurruari'; break;
+case 0: bulan1 = 'Januari'; break;
 case 1: bulan1 = 'Februari'; break; 
 case 2: bulan1 = 'Maret'; break;
 case 3: bulan1 = 'April'; break;
@@ -136,7 +136,7 @@ const starts = async (kurr = new WAConnection()) => {
 	kurr.logger.level = 'warn'
 	kurr.version = [2, 2140, 14]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('Kurr Base', {
+	console.log(color(figlet.textSync('Hanif Base', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -147,7 +147,7 @@ const starts = async (kurr = new WAConnection()) => {
 console.log(color('> WITA ','silver'), color(`${wita}`,'mediumseagreen'))
 console.log(color('> WIT ','silver'), color(`${wit}`,'mediumseagreen'))
 console.log(color('> HARI ','silver'), color(`${tampilHari}\n`,'mediumseagreen'))
-	kurr.browserDescription = [ 'Kurr ', 'ubuntu', '3.0' ]
+	kurr.browserDescription = [ 'HanifBotz ', 'Firefox', '3.0' ]
 
 	kurr.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN QR NYA'))
@@ -309,7 +309,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				teks = ` Hi @${num.split('@')[0]}\nSELAMAT DATANG DI\nDI *${mdata.subject}*\nJANGAN LUPA BACA RULES☺`
 
-				sendButImage(anu.jid, teks, `Yuki bot`, img,but = [{buttonId:`apaaja`, 
+				sendButImage(anu.jid, teks, `Hanif bot`, img,but = [{buttonId:`apaaja`, 
 
                buttonText:{displayText: 'WELCOME'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
@@ -331,7 +331,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				teks = `MARI KITA DOAKAN\nYANG TERBAIK UNTUK\n@${num.split('@')[0]}\nATAS KEPERGIANYA DARI\n*${mdata.subject}*`
 
-				sendButImage(anu.jid, teks, `Yuki bot`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `AMIN`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+				sendButImage(anu.jid, teks, `Hanif bot`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `AMIN`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'promote') {
 
